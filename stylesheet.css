@@ -1,0 +1,39 @@
+/* * {
+    outline: .5px solid red;
+} */
+
+a:link,
+a:visited,
+a:active {
+  color: #000000;
+  text-decoration: none;
+  opacity: 50%;
+}
+
+a:hover {
+  color: #000000;
+  opacity: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  background-color: #c6e8f6;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 50px 0 50px;
+}
+
+.options {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+
+}
