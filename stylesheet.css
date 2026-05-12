@@ -38,7 +38,7 @@ ul {
     gap: 40px;
 }
 
-.top-three {
+.highlights {
     display: flex;
     align-items: center;
     justify-content: space-between;
