@@ -3,7 +3,6 @@
 } */
 
 
-
 .title {
   font-family: 'geologica', sans-serif;
   font-weight: 900;
@@ -16,7 +15,6 @@ h2 {
 p {
     font-weight: 100;
 }
-
 
 
 a:link,
@@ -56,6 +54,9 @@ ul {
     gap: 20px;
 }
 
+
+
+
 .highlights {
     display: flex;
     align-items: center;
@@ -81,14 +82,13 @@ ul {
 
 .box-one {
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent),
-              url("img/bicester-scramble-apr26-cover.jpg");
+  url("img/bicester-scramble-apr26-cover.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .box-two {
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent),
-              url("img/snetterton-june25-cover.jpg");
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url("img/snetterton-june25-cover.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -112,11 +112,8 @@ a.box-link:hover {
     margin: 0;
 }
 
-/* .catalogue-wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-} */
+
+
 
 .catalogues {
     display: flex;
@@ -129,16 +126,61 @@ a.box-link:hover {
 .box {
     border-radius: 15px;
     background-color: #c6e8f6;
-    padding: 150px 10px 10px;
+    padding: 150px 20px 20px;
     min-width: 150px;
     flex: 0 1 calc((100% - 30px) / 3);
     box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
+
+#box-one {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url("img/bicester-scramble-oct25-cover.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#box-two {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url("img/goodwood-fos-jul25-cover.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#box-three {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url("img/snetterton-classic-june25-cover.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#box-four {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url("img/london-concours-june25-cover.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#box-five {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url("img/porsche-club-may25-cover.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#box-six {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url("img/custom-shoot-may25-cover.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
 
 .footer {
     border-radius: 15px;
-    background-color: #c6e8f6;
+    /* background-color: #c6e8f6; */
     padding: 10px;
+    font-size: small;
     display: flex;
     justify-content: center;
     align-items: center;
