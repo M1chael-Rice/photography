@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: .5px solid red;
-}
+} */
 
 a:link,
 a:visited,
@@ -68,7 +68,6 @@ ul {
     gap: 15px;
     margin: 15px 0;
     justify-content: flex-start;
-
 }
 
 .one,
@@ -82,3 +81,20 @@ ul {
     flex: 0 1 calc((100% - 30px) / 3);
     box-sizing: border-box;
 }
+
+.footer {
+    border-radius: 15px;
+    background-color: #c6e8f6;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    gap: 25px;
+    padding: 0px 0px 5px 0px;
+}
+
