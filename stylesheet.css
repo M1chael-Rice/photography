@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: .5px solid red;
-} */
+}
 
 a:link,
 a:visited,
@@ -62,6 +62,12 @@ ul {
     margin: 0;
 }
 
+/* .catalogue-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+} */
+
 .catalogues {
     display: flex;
     flex-wrap: wrap;
@@ -70,14 +76,11 @@ ul {
     justify-content: flex-start;
 }
 
-.one,
-.two,
-.three,
-.four {
+.box {
     border-radius: 15px;
     background-color: #c6e8f6;
     padding: 150px 10px 10px;
-    min-width: 200px;
+    min-width: 150px;
     flex: 0 1 calc((100% - 30px) / 3);
     box-sizing: border-box;
 }
