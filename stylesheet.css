@@ -93,6 +93,19 @@ ul {
   background-position: center;
 }
 
+a.box-link:link,
+a.box-link:visited,
+a.box-link:active {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 100%;
+}
+
+a.box-link:hover {
+  color: #ffffff;
+  opacity: 50%;
+}
+
 .subheading, p {
     display: flex;
     justify-content: space-between;
