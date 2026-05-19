@@ -18,7 +18,6 @@ p {
     color: white;
 }
 
-
 a:link,
 a:visited,
 a:active {
@@ -38,6 +37,21 @@ ul {
   padding: 0;
 }
 
+a.box-link:link,
+a.box-link:visited,
+a.box-link:active {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 100%;
+}
+
+a.box-link:hover {
+  color: #ffffff;
+  opacity: 50%;
+}
+
+/* Header section */
+
 .nav-bar {
   /* background-color: #c6e8f6; */
   border-radius: 15px;
@@ -56,8 +70,7 @@ ul {
     gap: 20px;
 }
 
-
-
+/* Highlight section */
 
 .highlights {
     display: flex;
@@ -66,7 +79,6 @@ ul {
     gap: 15px;
     margin: 15px 0px;
 }
-
 
 .box-one,
 .box-two {
@@ -89,25 +101,10 @@ ul {
   background-position: center;
 }
 
-
-
 .box-two {
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url("img/snetterton-june25-cover.jpg");
   background-size: cover;
   background-position: center;
-}
-
-a.box-link:link,
-a.box-link:visited,
-a.box-link:active {
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 100%;
-}
-
-a.box-link:hover {
-  color: #ffffff;
-  opacity: 50%;
 }
 
 .subheading, p {
@@ -116,8 +113,7 @@ a.box-link:hover {
     margin: 0;
 }
 
-
-
+/* Gallery section */
 
 .catalogues {
     display: flex;
@@ -176,9 +172,7 @@ a.box-link:hover {
   background-position: center;
 }
 
-
-
-
+/* Footer section */
 
 .footer {
     border-radius: 15px;
