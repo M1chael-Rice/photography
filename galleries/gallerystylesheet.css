@@ -93,16 +93,16 @@ a.box-link:hover {
     /* font-size: 20px; */
 }
 
-.scroll {
+div.scroll {
   background-color: white;
   overflow-x: auto;
-  /* white-space: nowrap; */
+  white-space: nowrap;
   /* padding: 10px; */
   display: flex;
 }
 
-.scroll img {
-  width: 300px;       /* control image size */
+div.scroll img {
+  width: 500px;       /* control image size */
   height: 300px;      /* optional */
   object-fit: cover;  /* keeps cropping nice */
   padding: 10px;
