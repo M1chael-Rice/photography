@@ -121,19 +121,17 @@ div.scroll img {
     /* padding: 0 4px; */
 }
 
-.photo {
+/* .photo {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
-}
+} */
 
 .photo img {
-    /* height: 200px;
+    height: 200px;
     width: auto;
-    flex: 1 1 auto; */
+    /* flex: 1 0 auto; */
     border-radius: 5px;
-    /* margin-top: 8px; */
-    /* vertical-align: middle; */
 }
 
 
