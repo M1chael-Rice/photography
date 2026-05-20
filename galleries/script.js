@@ -1,4 +1,4 @@
-fetch('images.json')
+fetch('./galleries/images.json')
   .then(response => response.json())
   .then(images => {
 

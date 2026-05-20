@@ -108,6 +108,32 @@ div.scroll img {
   padding: 10px;
 }
 
+
+
+/* .gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+} */
+
 /* Footer section */
 
 .footer {
