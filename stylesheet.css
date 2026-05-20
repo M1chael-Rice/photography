@@ -26,10 +26,10 @@ a:active {
   opacity: 100%;
 }
 
-a:hover {
+/* a:hover {
   color: #000000;
   opacity: 50%;
-}
+} */
 
 ul {
   list-style-type: none;
