@@ -1,0 +1,125 @@
+/* * {
+    outline: .5px solid red;
+} */
+
+
+.title {
+  font-family: 'geologica', sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+    font-weight: 500;
+    color: white;
+}
+
+p {
+    font-weight: 100;
+    color: white;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #000000;
+  text-decoration: none;
+  opacity: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a.box-link:link,
+a.box-link:visited,
+a.box-link:active {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 100%;
+}
+
+a.box-link:hover {
+  color: #ffffff;
+  opacity: 50%;
+}
+
+/* Header section */
+
+.nav-bar {
+  border-radius: 15px;
+  border-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 30px 0 30px;
+  margin: 15px 0px;
+}
+
+.options {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Contact form section */
+
+.container {
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    border-width: 1px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'geologica', sans-serif;
+}
+
+input[type=submit] {
+    color: black;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border-color: #000000;
+    border-width: 1px;
+    cursor: pointer;
+    font-family: 'geologica', sans-serif;
+    background-color: #ffffff;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+/* Footer section */
+
+.footer {
+    border-radius: 15px;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    gap: 25px;
+    margin: 10px;
+}
+
+.copyright {
+    color: #000000;
+    opacity: 50%;
+}
