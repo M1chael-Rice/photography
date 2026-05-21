@@ -18,7 +18,7 @@ h2 {
     display: flex;
     justify-self: center;
     font-size: 50px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-align: center;
 }
 
