@@ -19,7 +19,7 @@
 
     </head>
 
-    
+
     <body>
     
     <div class="nav-bar">
@@ -48,28 +48,124 @@
     </div>
 
     <div class="gallery">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7051.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7055.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7059.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7065.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7083.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7102.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7103.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7107.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7112.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7118.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7124.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7131.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7144.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7157.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7166.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7171.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7175.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7199.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7215.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7235.jpg" alt="">
-       <img id="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7238.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7051.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7055.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7059.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7065.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7083.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7102.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7103.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7107.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7112.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7118.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7124.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7131.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7144.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7157.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7166.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7171.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7175.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7199.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7215.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7235.jpg" alt="">
+       <img class="photos" src="/img/bicester-scramble-apr26/gallery/DSCF7238.jpg" alt="">
     </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+
+        <button class="prev">&#10094;</button>
+
+        <img class="lightbox-img" id="lightbox-img">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <script>
+const images = document.querySelectorAll(".photos");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+const closeBtn = document.querySelector(".close");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+let currentIndex = 0;
+
+
+// OPEN LIGHTBOX
+images.forEach((img, index) => {
+    img.addEventListener("click", () => {
+        currentIndex = index;
+        showImage();
+        lightbox.classList.add("active");
+    });
+});
+
+
+// SHOW CURRENT IMAGE
+function showImage() {
+    lightboxImg.src = images[currentIndex].src;
+}
+
+
+// CLOSE LIGHTBOX
+function closeLightbox() {
+    lightbox.classList.remove("active");
+}
+
+closeBtn.addEventListener("click", closeLightbox);
+
+
+// CLOSE WHEN CLICKING BACKGROUND
+lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        closeLightbox();
+    }
+});
+
+
+// NEXT IMAGE
+nextBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage();
+});
+
+
+// PREVIOUS IMAGE
+prevBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    currentIndex =
+        (currentIndex - 1 + images.length) % images.length;
+
+    showImage();
+});
+
+
+// KEYBOARD SUPPORT
+document.addEventListener("keydown", (e) => {
+    if (!lightbox.classList.contains("active")) return;
+
+    if (e.key === "Escape") {
+        closeLightbox();
+    }
+
+    if (e.key === "ArrowRight") {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage();
+    }
+
+    if (e.key === "ArrowLeft") {
+        currentIndex =
+            (currentIndex - 1 + images.length) % images.length;
+
+        showImage();
+    }
+});
+</script>
 
 
     <footer>
