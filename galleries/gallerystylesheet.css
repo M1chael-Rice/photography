@@ -94,71 +94,38 @@ a.box-link:hover {
 }
 
 div.scroll {
-  background-color: white;
-  overflow-x: auto;
-  white-space: nowrap;
-  /* padding: 10px; */
-  display: flex;
+    background-color: white;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
 }
 
 div.scroll img {
-  width: 500px;       /* control image size */
-  height: 300px;      /* optional */
-  object-fit: cover;  /* keeps cropping nice */
-  padding: 10px;
-  border-radius: 15px;
+    width: 500px;       /* control image size */
+    height: 300px;      /* optional */
+    object-fit: cover;  /* keeps cropping nice */
+    padding: 10px;
+    border-radius: 15px;
 }
 
-/* Scroll section */
+/* Gallery section */
 
 .gallery {
     gap: 15px;
     border-radius: 15px;
     padding: 10px;
-    /* justify-content: flex-start; */
     display: flex;
     flex-wrap: wrap;
-    /* padding: 0 4px; */
+    justify-content: center;
+    flex-direction:row-reverse;
 }
 
-/* .photo {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-} */
-
-.photo img {
-    height: 200px;
+#photos {
     width: auto;
-    /* flex: 1 0 auto; */
+    height: 200px;
+    object-fit: contain;
     border-radius: 5px;
 }
-
-
-
-/* .gallery {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(250px, 1fr));
-
-    gap: 15px;
-}
-
-.gallery img {
-    width: 100%;
-    height: 250px;
-
-    object-fit: cover;
-
-    border-radius: 10px;
-
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.03);
-} */
 
 /* Footer section */
 
