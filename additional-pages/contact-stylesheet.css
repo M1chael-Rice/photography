@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: .5px solid red;
-}
+} */
 
 
 .title {
@@ -22,12 +22,9 @@ h2 {
     text-align: center;
 }
 
-p {
-    display: flex;
-    justify-self: center;
+h3 {
     font-weight: 100;
-    max-width: 650px;
-    text-align: center;
+    font-size: 15px;
 }
 
 a:link,
@@ -76,9 +73,19 @@ a.box-link:hover {
     gap: 20px;
 }
 
+/* Message section */
+
+.messages {
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    font-weight: 100;
+    max-width: 650px;
+}
+
 /* Contact form section */
 
-.container {
+/* .container {
   border-radius: 15px;
   padding: 20px;
   display: flex;
@@ -89,7 +96,6 @@ a.box-link:hover {
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    /* border: 1px solid #ccc; */
     border-radius: 5px;
     border-width: 1px;
     box-sizing: border-box;
@@ -112,7 +118,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: rgb(231, 231, 231);
-}
+} */
 
 /* Scroll section */
 
