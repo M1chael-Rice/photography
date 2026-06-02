@@ -1,0 +1,120 @@
+* {
+    outline: .5px solid red;
+}
+
+
+.title {
+  font-family: 'geologica', sans-serif;
+  font-weight: 900;
+}
+
+h1 {
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-self: center;
+    font-size: 50px;
+    /* text-decoration: underline; */
+    text-align: center;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #000000;
+  text-decoration: none;
+  opacity: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a.box-link:link,
+a.box-link:visited,
+a.box-link:active {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 100%;
+}
+
+a.box-link:hover {
+  color: #ffffff;
+  opacity: 50%;
+}
+
+/* Header section */
+
+.nav-bar {
+  border-radius: 15px;
+  border-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 30px 0 30px;
+  margin: 15px 0px;
+}
+
+.options {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Main section */
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 30px 0 30px; */
+    margin: 15px 0px;
+    gap: 15px;
+}
+
+.michael {
+  object-fit: cover;
+  width: 35%;
+  /* height: auto; */
+  border-radius: 15px;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+p {
+    max-width: 600px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    
+}
+
+.box-one,
+.box-two,
+.box-three {
+    width: 200px;
+    height: 100px;
+    background: red;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
